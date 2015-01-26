@@ -16,7 +16,7 @@ I can improve these for everybody. Thanks!
 
 __IMPORTANT: If you are also using Emmet, add the following to Emmet's user settings file:__
 
-`"disabled_single_snippets": "html head fig nav ol script style ul"`
+`"disabled_single_snippets": "html head fig link nav ol script style ul"`
 
 ---
 
@@ -97,18 +97,18 @@ __html__
 
 ```html
 <!DOCTYPE html>
-<html lang="${1:en}">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>${2:Untitled}</title>
-        <meta name="description" content="$3">
+        <title>${1:Untitled}</title>
+        <meta name="description" content="$2">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="${4:css/main.css}">
+        <link rel="stylesheet" href="${3:css/main.css}">
     </head>
     <body>
-        $6
-        <script src="${5:js/main.js}"></script>
+        $5
+        <script src="${4:js/main.js}"></script>
     </body>
 </html>
 ```
@@ -124,6 +124,12 @@ __jquery__
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/${1:1.10.2}/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-${1:1.10.2}.min.js"><\/script>')</script>
+```
+
+__link__
+
+```html
+<link rel="${1:stylesheet}" href="$2">
 ```
 
 __lorem__
@@ -178,7 +184,9 @@ __shiv__
 __style__
 
 ```html
-<link rel="stylesheet" href="$1">
+<style>
+    $1
+</style>
 ```
 
 __ul__
