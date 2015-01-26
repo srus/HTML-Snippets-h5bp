@@ -1,6 +1,8 @@
 <snippet>
-	<content><![CDATA[<link rel="stylesheet" href="$1">]]></content>
+	<content><![CDATA[<style>
+	$1
+</style>]]></content>
 	<tabTrigger>style</tabTrigger>
-	<description>HTML - Stylesheet link</description>
+	<description>HTML - Inline style</description>
 	<scope>text.html</scope>
 </snippet>
