@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[<img src="$1" alt="$2">$3]]></content>
+	<content><![CDATA[<img src="$1" alt="$2" sizes="$3" srcset="$4">]]></content>
 	<tabTrigger>img</tabTrigger>
 	<description>HTML - Image</description>
 	<scope>text.html</scope>
