@@ -104,7 +104,7 @@ __html__
 __img__
 
 ```html
-<img src="$1" alt="$2" sizes="$3" srcset="$4">
+<img src="${1:image.jpg}" alt="$2" sizes="${3:(min-width: 600px) 25vw, 100vw}" srcset="${4:100.jpg 100w, 1000.jpg 1000w}">
 ```
 
 __jquery__
@@ -190,7 +190,7 @@ __ul__
 </ul>
 ```
 
-__video1__
+__video__
 
 ```html
 <video src="${1:movie}.${2:webm}" type="video/$2" ${3:controls} poster="${4:poster.jpg}">
