@@ -16,7 +16,7 @@ I can improve these for everybody. Thanks!
 
 __IMPORTANT: If you are also using Emmet, add the following to Emmet's user settings file:__
 
-`"disabled_single_snippets": "fig html head img link meta nav ol script style ul video"`
+`"disabled_single_snippets": "fig html head img link meta nav ol picture script style ul video"`
 
 ---
 
@@ -153,6 +153,16 @@ __ol__
     <li>$3</li>
     <li>$4</li>
 </ol>
+```
+
+__picture__
+
+```html
+<picture>
+    <source media="(min-width: ${1:800px})" srcset="${2:image.jpg}, ${3:image-2x.jpg 2x}">
+    <source media="(min-width: ${4:450px})" srcset="${5:image-small.jpg}, ${6:image-small-2x.jpg 2x}">
+    <img src="${7:image.jpg}" alt="$8" srcset="${9:image-2x.jpg 2x}">
+</picture>
 ```
 
 __script__
