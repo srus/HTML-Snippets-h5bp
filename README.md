@@ -16,7 +16,7 @@ I can improve these for everybody. Thanks!
 
 __IMPORTANT: If you are also using Emmet, add the following to Emmet's user settings file:__
 
-`"disabled_single_snippets": "html head fig link nav ol script style ul"`
+`"disabled_single_snippets": "html head fig link nav ol script style ul video"`
 
 ---
 
@@ -180,3 +180,20 @@ __ul__
 </ul>
 ```
 
+__video1__
+
+```html
+<video src="${1:movie}.${2:webm}" type="video/$2" ${3:controls} poster="${4:poster.jpg}">
+    <p>${5:Your browser does not support the video element.}</p>
+</video>
+```
+
+__video2__
+
+```html
+<video ${1:controls} poster="${2:poster.jpg}">
+    <source src="${3:movie}.${4:webm}" type"video/$4">
+    <source src="${5:movie}.${6:mp4}" type"video/$6">
+    <p>${7:This browser does not support the video element.}</p>
+</video>
+```

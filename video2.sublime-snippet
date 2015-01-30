@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[<video ${1:controls} poster="${2:poster.jpg}">
+	<source src="${3:movie}.${4:webm}" type"video/$4">
+	<source src="${5:movie}.${6:mp4}" type"video/$6">
+	<p>${7:This browser does not support the video element.}</p>
+</video>]]></content>
+	<tabTrigger>video2</tabTrigger>
+	<description>HTML - video</description>
+	<scope>text.html</scope>
+</snippet>
