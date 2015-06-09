@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<form method="${1:post}" action="${2:URL}">
+	<input type="submit" value="${3:Submit}">
+</form>]]></content>
+	<tabTrigger>form</tabTrigger>
+	<description>HTML - form</description>
+	<scope>text.html</scope>
+</snippet>
