@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[<form method="${1:post}" action="${2:URL}">
+	<content><![CDATA[<form action="$1" method="${2:post}">
 	<input type="submit" value="${3:Submit}">
 </form>]]></content>
 	<tabTrigger>form</tabTrigger>
